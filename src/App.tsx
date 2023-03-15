@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import HomeListings from './components/Homelistings';
+import Home from './components/Home';
+import scrapeData from './scrapeData';
 
-function App() {
+const App = () => {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <Routes>
+        <Route  path="/" Component={Home} />
+        <Route path="/listings" Component={() => <HomeListings listingsHtml={'https://www.corcoran.com/search/for-sale/location/northwest-harris-tx-17534130/regionId/119'} />} />
+        </Routes>
+      </div>
     </div>
   );
 }
