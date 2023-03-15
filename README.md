@@ -1,4 +1,4 @@
-#Main Points for Masterworks
+# Main Points for Masterworks
 I left the dist folder inside of this repo since the `scrape_and_save.mjs` has to be an mjs file.
 
 The app also has a non working starting outline of what we could use to list the data after transformation.
