@@ -1,3 +1,10 @@
+#Main Points for Masterworks
+I left the dist folder inside of this repo since the `scrape_and_save.mjs` has to be an mjs file.
+
+The app also has a non working starting outline of what we could use to list the data after transformation.
+In order to run this scrapper, we have to navigate into the dist folder and run `node scrape_and_save.mjs`
+This will create a listings_data.json file with all of the information for each property on each page of the search. The next steps would be to then filter through this Json file and extract the neccesary data. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
